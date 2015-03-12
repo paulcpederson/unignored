@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/paulcpederson/unignored",
   "dependencies": {
-    "tmp": "0.0.25",
+    "glob": "^5.0.2",
+    "shelljs": "^0.3.0",
     "yargs": "^3.5.4"
   }
 }
