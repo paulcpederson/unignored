@@ -1,0 +1,25 @@
+{
+  "name": "unignored",
+  "version": "0.0.0",
+  "description": "Check what files in an npm project will be published",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulcpederson/unignored.git"
+  },
+  "keywords": [
+    "ignore",
+    "npmignore",
+    "gitignore",
+    "files"
+  ],
+  "author": "Paul C Pederson <paul.c.pederson@gmail.com> (http://paulcpederson.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulcpederson/unignored/issues"
+  },
+  "homepage": "https://github.com/paulcpederson/unignored"
+}
