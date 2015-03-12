@@ -1,5 +1,8 @@
 # Unignored
 
+[![](https://img.shields.io/npm/v/unignored.svg?style=flat-square)](https://www.npmjs.com/package/unignored)
+[![](https://img.shields.io/travis/paulcpederson/unignored.svg?style=flat-square)](https://travis-ci.org/paulcpederson/unignored)
+
 > Check what files in an npm project will be published
 
 ## Install
@@ -50,4 +53,4 @@ If you have both `files` and `.npmignore` and they conflict, `.npmignore` will o
 
 ## Contribute
 
-Contributions are welcome! This project uses the [standard style](https://github.com/feross/standard), so you should use it too! `npm test` will automatically run tests *and* make sure the code is written to the standard. If the tests pass, you are good to go!
+Contributions are welcome! This project uses the [standard style](https://github.com/feross/standard), so you should use it too! `npm test` will automatically make sure the code is written to the standard. If the tests pass, you are good to go!
