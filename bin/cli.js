@@ -17,3 +17,13 @@ var yargs = require('yargs')
 
 var argv = yargs.argv
 
+unignored(argv.path, function (err, files) {
+  if (err) {
+    console.error(err)
+    process.exit(1)
+  }
+  files.forEach( function (file) {
+    console.log(file)
+  })
+  process.exit(0)
+})
