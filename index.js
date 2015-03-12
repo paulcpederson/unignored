@@ -1,3 +1,4 @@
+var rimraf = require('rimraf')
 var shell = require('shelljs')
 var path = require('path')
 var glob = require('glob')
@@ -13,9 +14,9 @@ module.exports = function (pathName, callback) {
   fs.writeFileSync('package.json', '{"name": "unignored-tmp","version": "0.0.0"}')
   shell.exec('npm install ../' + currentDir, {silent: true})
   var folderName = 'node_modules/' + pjson.name + '/'
-  glob(folderName + '**/*', function (err, files) {
+  glob(folderName + '**/*.*', function (err, files) {
     if (err) { callback(err) }
-    shell.rm('-rf', '../unignored-tmp')
+    rimraf.sync('../unignored-tmp')
     files = files.map(function (file) {
       return file.replace(folderName, '')
     })

@@ -27,6 +27,7 @@
   "homepage": "https://github.com/paulcpederson/unignored",
   "dependencies": {
     "glob": "^5.0.2",
+    "rimraf": "^2.3.2",
     "shelljs": "^0.3.0",
     "yargs": "^3.5.4"
   },
