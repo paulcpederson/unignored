@@ -21,8 +21,15 @@ Simply require `unignored` and pass it a path to the npm project you'd like to c
 
 ## CLI
 
+You can install the module globally and use it as a cli as well:
+
 ```
-unignored --path /path/to/module
+Usage: unignored [options]
+
+Options:
+  -p, --path     path to module (relative)    [default: "./"]
+  -h, --help     Show help
+  -v, --version  Show version number
 ```
 
 ## Why
