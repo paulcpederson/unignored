@@ -22,7 +22,7 @@ unignored(argv.path, function (err, files) {
     console.error(err)
     process.exit(1)
   }
-  files.forEach( function (file) {
+  files.forEach(function (file) {
     console.log(file)
   })
   process.exit(0)
