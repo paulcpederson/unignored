@@ -1,6 +1,6 @@
 {
   "name": "unignored",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Check what files in an npm project will be published",
   "main": "index.js",
   "bin": {
