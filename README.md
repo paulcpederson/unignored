@@ -15,7 +15,7 @@ npm install unignored
 
 ```
 var unignored = require('unignored')
-unignored('./', function(files) {
+unignored('./', function(err, files) {
   console.log(files)
 })
 ```
@@ -37,9 +37,7 @@ Options:
 
 ## Why
 
-While working on a project that automatically created GitHub releases, I wanted releases to have a one to one relationship with the files that will be npm installed.
-
-As it turns out, npm is actually very smart about which files are included and which are ignored by default. Not only that, but this is highly configurable with `.gitignore`, `.npmignore`, and the `files` key in `package.json`. Because these rules are slightly complex, it can be helpful to see what files *all consumers* of your module will have to download when they install it.
+NPM is very smart about which files are included and which are ignored by default. This is highly configurable with `.gitignore`, `.npmignore`, and the `files` key in `package.json`. Because these rules are slightly complex, it can be helpful to see what files *all consumers* of your module will have to download when they install it.
 
 ## About NPM Ignore
 
