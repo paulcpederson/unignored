@@ -7,18 +7,23 @@ var fs = require('fs')
 
 module.exports = function (pathName, callback) {
   pathName = pathName || './'
-  var pjson = require(path.resolve(process.cwd(), pathName, 'package.json'))
-  var currentDir = path.basename(process.cwd())
-  shell.cd(process.cwd())
+  var targetDir = path.resolve(process.cwd(), pathName)
+  var pjson = require(path.resolve(targetDir, 'package.json'))
+  var dirName = path.basename(process.cwd())
+  shell.cd(targetDir)
   var tmpDir = tmp.dirSync({
     dir: '../',
     unsafeCleanup: true
   })
   shell.cd(tmpDir.name)
   fs.writeFileSync('package.json', '{"name": "unignored-tmp","version": "0.0.0"}')
-  shell.exec('npm install ../' + currentDir, {silent: true})
+  shell.exec('npm install ../' + dirName, {silent: true})
   var folderName = 'node_modules/' + pjson.name + '/'
-  glob(folderName + '**', {nodir: true}, function (err, files) {
+  var globOptions = {
+    nodir: true,
+    ignore: folderName + 'node_modules/'
+  }
+  glob(folderName + '**', globOptions, function (err, files) {
     rimraf.sync(tmpDir.name)
     if (err) { callback(err) }
     files = files.map(function (file) {
