@@ -1,5 +1,7 @@
 # Unignored
 
+> **NOTICE: THIS MODULE HAS BEEN DEPRECATED. PLEASE USE [Irish Pub](https://github.com/thlorenz/irish-pub) or [pkgfiles](https://github.com/timoxley/pkgfiles) AS THEY WORK FOR *UNPUBLISHED* MODULES AS WELL.**
+
 [![](https://img.shields.io/npm/v/unignored.svg?style=flat-square)](https://www.npmjs.com/package/unignored)
 [![](https://img.shields.io/travis/paulcpederson/unignored.svg?style=flat-square)](https://travis-ci.org/paulcpederson/unignored)
 
