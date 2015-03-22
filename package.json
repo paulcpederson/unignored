@@ -7,7 +7,7 @@
     "unignored": "./bin/cli.js"
   },
   "scripts": {
-    "test": "standard"
+    "test": "standard && node test | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,8 @@
     "yargs": "^3.5.4"
   },
   "devDependencies": {
-    "standard": "^2.11.0"
+    "standard": "^2.11.0",
+    "tap-spec": "^2.2.2",
+    "tape": "^3.5.0"
   }
 }
