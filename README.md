@@ -37,7 +37,7 @@ Options:
 
 ## Why
 
-> Since creating this tool, I've found a few other modules that accomplish this same task like [irish-pub](https://www.npmjs.com/package/irish-pub) and [pkgfiles](https://github.com/timoxley/pkgfiles). They both include more features are are recommended if unignored doesn't work out for you.
+> Since creating this tool, I've found a few other modules that accomplish this same task like [irish-pub](https://www.npmjs.com/package/irish-pub) and [pkgfiles](https://github.com/timoxley/pkgfiles). They both include more features and are recommended if unignored doesn't work out for you.
 
 NPM is very smart about which files are included and which are ignored by default. This is highly configurable with `.gitignore`, `.npmignore`, and the `files` key in `package.json`. Because these rules are slightly complex, it can be helpful to see what files *all consumers* of your module will have to download when they install it.
 
