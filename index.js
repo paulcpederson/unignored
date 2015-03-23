@@ -21,7 +21,7 @@ module.exports = function (pathName, callback) {
   var folderName = 'node_modules/' + pjson.name + '/'
   var globOptions = {
     nodir: true,
-    ignore: folderName + 'node_modules/'
+    ignore: folderName + 'node_modules/**'
   }
   glob(folderName + '**', globOptions, function (err, files) {
     rimraf.sync(tmpDir.name)

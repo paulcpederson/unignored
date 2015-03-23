@@ -1,7 +1,5 @@
 # Unignored
 
-> **NOTICE: THIS MODULE HAS BEEN DEPRECATED. PLEASE USE [Irish Pub](https://github.com/thlorenz/irish-pub) or [pkgfiles](https://github.com/timoxley/pkgfiles) AS THEY WORK FOR *UNPUBLISHED* MODULES AS WELL.**
-
 [![](https://img.shields.io/npm/v/unignored.svg?style=flat-square)](https://www.npmjs.com/package/unignored)
 [![](https://img.shields.io/travis/paulcpederson/unignored.svg?style=flat-square)](https://travis-ci.org/paulcpederson/unignored)
 
@@ -38,6 +36,8 @@ Options:
 ```
 
 ## Why
+
+> Since creating this tool, I've found a few other modules that accomplish this same task like [irish-pub](https://www.npmjs.com/package/irish-pub) and [pkgfiles](https://github.com/timoxley/pkgfiles). They both include more features are are recommended if unignored doesn't work out for you.
 
 NPM is very smart about which files are included and which are ignored by default. This is highly configurable with `.gitignore`, `.npmignore`, and the `files` key in `package.json`. Because these rules are slightly complex, it can be helpful to see what files *all consumers* of your module will have to download when they install it.
 
