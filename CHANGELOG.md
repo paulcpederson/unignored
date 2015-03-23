@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.5 - 2015-03-22
+- Fix `node_modules` files from showing up in output
+
+## 1.0.4 - 2015-03-22
+- Add note about pkgfiles and irish-pub
+
 ## 1.0.3 - 2015-03-13
 - Ignore `node_modules` folder in output
 - Fix paths other than current directory
